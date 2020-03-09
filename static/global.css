@@ -62,10 +62,11 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   line-height: 1.5; 
   font-size: 1.6rem;
   color: #333;
+  background: #F6F6F0;
 }
 
 .c-h1 {
@@ -79,4 +80,8 @@ body {
 
 .c-h3 {
   font-size: 1.8rem;
+}
+
+.c-comment__text p {
+  padding: 0 0 1.2rem;
 }

@@ -12,11 +12,19 @@
     .detail-header {
         padding: 1.6rem;
     }
+    
+    .detail-header  p {
+        color: #666;
+    }
 
 </style>
 
 <svelte:head>
-    <title>{#await detail}Loading...{:then data}{data.title}{/await}</title>
+    {#await detail}
+    <title>Loading...</title>
+    {:then data}
+    <title>{data.title}</title>
+    {/await}
 </svelte:head>
 
 {#await detail}

@@ -12,6 +12,8 @@
     .c-comment__user {
         font-weight: 600;
     }
+    
+
 
 </style>
 
