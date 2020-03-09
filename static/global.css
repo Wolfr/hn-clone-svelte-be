@@ -85,3 +85,11 @@ body {
 .c-comment__text p {
   padding: 0 0 1.2rem;
 }
+
+a {
+    color: #000;
+}
+
+a:visited {
+    color: #666;
+}

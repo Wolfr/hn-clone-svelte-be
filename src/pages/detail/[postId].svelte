@@ -11,10 +11,12 @@
     
     .detail-header {
         padding: 1.6rem;
+        background: #FFF;
     }
     
     .detail-header  p {
         color: #666;
+        font-size: 90%;
     }
 
 </style>

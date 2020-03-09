@@ -18,12 +18,12 @@
         font-size: 90%;
         color: #666;
     }
-    
+
     a {
         text-decoration: none;
         display: block;
     }
-
+ 
     a:hover {
         background: #EEE;
     }

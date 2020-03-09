@@ -6,6 +6,8 @@
 
     main h2 {
         padding: 1.6rem;
+        font-weight: 600;
+        color: #000;
     }
 
 </style>
