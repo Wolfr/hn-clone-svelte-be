@@ -3,6 +3,6 @@
 </script>
 
 <main>
-    <h1>Hacker News</h1>
+    <h1 class="c-h1">Hacker News</h1>
     <Articles />
 </main>
