@@ -1,5 +1,6 @@
 <script>
     let listItems = fetch('https://node-hnapi.herokuapp.com/news?page=1').then(res => res.json());
+    import HorizontalList from './HorizontalList.svelte';
 </script>
     
 <style>
@@ -37,10 +38,7 @@
             <a href="/detail/{item.id}">
                 {item.title} <span>({item.domain})</span>
             </a>
-            <ul>
-                <li>{item.points} points by {item.user}</li>
-                <li>{item.comments_count} comments</li>
-            </ul>
+            <HorizontalList {item} />
         </li>
       {/each}
     {/await}
