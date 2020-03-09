@@ -6,16 +6,32 @@
 
     let detail = fetch('https://node-hnapi.herokuapp.com/item/'+postId).then(res => res.json());
 </script>
+    
+<style>
+    
+    .detail-header {
+        padding: 1.6rem;
+    }
+
+</style>
+
+<svelte:head>
+    <title>{#await detail}Loading...{:then data}{data.title}{/await}</title>
+</svelte:head>
 
 {#await detail}
    <p>Loading</p>
 {:then data}
 
-    <h1><a href="{data.url}">{data.title}</a></h1>
-    <p>Submitted by {data.user} - {data.time_ago}</p>
-
-    <ul>
-        <Comment comment={data} />
-    </ul>
+    <div class="detail-header">
+        <h1><a href="{data.url}">{data.title}</a></h1>
+        <p>Submitted by {data.user} - {data.time_ago}</p>
+    </div>
+    
+    <main>
+        <ul>
+            <Comment comment={data} />
+        </ul>
+    </main>
 
 {/await}
