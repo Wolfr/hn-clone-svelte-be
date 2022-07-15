@@ -22,7 +22,7 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "sirv-cli": "^1.0.0-next.2",
-    "svelte": "^3.16.7",
+    "svelte": "^3.49.0",
     "del": "^5.1.0",
     "ppid-changed": "^1.0.1"
   },
